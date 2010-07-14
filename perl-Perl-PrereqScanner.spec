@@ -19,10 +19,12 @@ BuildRequires: perl(List::Util)
 BuildRequires: perl(PPI)
 BuildRequires: perl(PPI::Document)
 BuildRequires: perl(Scalar::Util)
+BuildRequires: perl(String::RewritePrefix)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Try::Tiny)
 BuildRequires: perl(Version::Requirements)
 BuildRequires: perl(namespace::autoclean)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -33,14 +35,11 @@ files.
 The extraction may not be perfect but tries to do its best. It will
 currently find the following prereqs:
 
-* *
-
 %prep
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
 %make
 
 %check
@@ -59,4 +58,3 @@ rm -rf %buildroot
 %{_mandir}/man3/*
 %perl_vendorlib/*
 /usr/bin/scan_prereqs
-
