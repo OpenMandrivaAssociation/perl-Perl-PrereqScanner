@@ -1,5 +1,5 @@
 %define upstream_name    Perl-PrereqScanner
-%define upstream_version 0.101890
+%define upstream_version 0.101891
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -55,6 +55,7 @@ rm -rf %buildroot
 %files
 %defattr(-,root,root)
 %doc Changes META.yml LICENSE README META.json
+%{_bindir}/*
+%{_mandir}/man1/*
 %{_mandir}/man3/*
 %perl_vendorlib/*
-/usr/bin/scan_prereqs
