@@ -1,5 +1,5 @@
 %define upstream_name    Perl-PrereqScanner
-%define upstream_version 0.101891
+%define upstream_version 0.101892
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
