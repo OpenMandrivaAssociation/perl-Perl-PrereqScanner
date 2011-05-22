@@ -1,9 +1,9 @@
 %define upstream_name    Perl-PrereqScanner
-%define upstream_version 1.002
+%define upstream_version 1.003
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    A tool to scan your Perl code for its prerequisites
 License:    GPL+ or Artistic
