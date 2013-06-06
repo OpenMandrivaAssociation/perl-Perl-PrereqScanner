@@ -1,15 +1,14 @@
 %define upstream_name    Perl-PrereqScanner
-%define upstream_version 1.004
-
+%define upstream_version 1.015
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 1.015
+Release:	1
 
 Summary:	A tool to scan your Perl code for its prerequisites
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Perl/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Perl/Perl-PrereqScanner-1.015.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(ExtUtils::MakeMaker)
@@ -27,6 +26,7 @@ BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Try::Tiny)
 BuildRequires:	perl(Version::Requirements)
 BuildRequires:	perl(namespace::autoclean)
+BuildRequires:	perl(CPAN::Meta::Requirements)
 
 BuildArch:	noarch
 
@@ -123,3 +123,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Tue Feb 23 2010 cpan2dist 0.100521-1mdv
 - initial mdv release, generated with cpan2dist
+

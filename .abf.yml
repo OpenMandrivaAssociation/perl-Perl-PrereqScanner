@@ -1,2 +1,4 @@
+removed_sources:
+  Perl-PrereqScanner-1.004.tar.gz: fa47d692addb9b4b8a1dcbe27f2276f01f605754
 sources:
-  "Perl-PrereqScanner-1.004.tar.gz": fa47d692addb9b4b8a1dcbe27f2276f01f605754
+  Perl-PrereqScanner-1.015.tar.gz: 8b5429f503400eb3eaf5fa3415f29907955330d2
