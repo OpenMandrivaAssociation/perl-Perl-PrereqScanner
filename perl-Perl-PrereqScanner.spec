@@ -2,7 +2,7 @@
 %define upstream_version 1.015
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 1.015
-Release:	1
+Release:	2
 
 Summary:	A tool to scan your Perl code for its prerequisites
 License:	GPL+ or Artistic
