@@ -1,14 +1,14 @@
 %define upstream_name    Perl-PrereqScanner
-%define upstream_version 1.015
+%define upstream_version 1.100
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 1.015
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	A tool to scan your Perl code for its prerequisites
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Perl/Perl-PrereqScanner-1.015.tar.gz
+Url:		https://github.com/rjbs/Perl-PrereqScanner
+Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Perl-PrereqScanner-1.100.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
