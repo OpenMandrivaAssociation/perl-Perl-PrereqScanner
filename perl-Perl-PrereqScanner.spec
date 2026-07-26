@@ -1,8 +1,7 @@
 %define upstream_name    Perl-PrereqScanner
-%define upstream_version 1.100
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.100
+Release:	2
 
 Summary:	A tool to scan your Perl code for its prerequisites
 License:	GPL+ or Artistic
@@ -39,7 +38,7 @@ The extraction may not be perfect but tries to do its best. It will
 currently find the following prereqs:
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
